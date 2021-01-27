@@ -15,6 +15,7 @@ public final class RelayOverHttpResponseHandler extends ChannelOutboundHandlerAd
 
     @Override
     public void write(ChannelHandlerContext ctx, Object msg, ChannelPromise promise) throws Exception {
+        System.out.println("...1....");
         if(msg instanceof ByteBuf){
             ByteBuf content=(ByteBuf)msg;
             if(content.readableBytes()==0){

@@ -16,6 +16,7 @@ public class InitHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+        System.out.println("....33....");
         if (msg instanceof Request) {
             Request request = (Request) msg;
             if (request.getPayload() != null && request.getPayload().readableBytes() == 4

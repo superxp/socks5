@@ -46,7 +46,7 @@ public class ClientRequestDecoder extends ByteToMessageDecoder {
     }
     @Override
     protected void decode(ChannelHandlerContext ctx, ByteBuf in, List<Object> out) throws Exception {
-
+           System.out.println("....2....");
 //        newContent=new byte[in.readableBytes()];
 //        in.markReaderIndex();
 //        in.readBytes(newContent);
